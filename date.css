@@ -1,0 +1,44 @@
+    .body {
+        background: url(../My\ date\ site//background/tokyo.jpg) no-repeat scroll center center;
+        z-index: 1;
+        opacity: 1;
+    }
+    
+    .header {
+        list-style: none;
+        color: blue;
+        overflow: hidden;
+        text-align: center;
+        padding: 10px 10px;
+        width: 25cm;
+        border-bottom: solid blueviolet 1px;
+    }
+    
+    .header li {
+        padding: 30px;
+        display: inline;
+        margin: 10px;
+        background-color: floralwhite;
+        opacity: 2;
+        padding: 30px;
+    }
+    
+    .date {
+        height: 50px;
+        padding: 50px 100px 50px 100px;
+        margin: 50px 50px;
+        font-size: 50px;
+        font-style: italic;
+        color: whitesmoke;
+        text-align: center;
+        background-size: cover;
+        font-family: "serif";
+    }
+    
+    .searchArea {
+        text-align: center;
+        padding: 20px 20px;
+        margin: 20px, 20px;
+    }
+    
+    .buttonSearch {}
