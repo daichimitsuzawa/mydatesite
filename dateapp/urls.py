@@ -1,9 +1,6 @@
-from rest_framework import routers
-from .views import Search_ViewSet, Table_Viewset,  FilterSearch_ViewSet, FilterTable_ViewSet
+from django.urls import path
+from . import  views
 
-router = routers.DefaultRouter()
-router.register('all_search/',Search_ViewSet)
-router.register('all_table/',Table_Viewset)
-router.register('search/',FilterSearch_ViewSet)
-router.register('table/',FilterTable_ViewSet)
-urlpatterns=router.urls
+urlpatterns=[
+    path('',views.date_list, name='date_list'),
+]

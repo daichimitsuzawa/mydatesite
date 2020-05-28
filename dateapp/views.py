@@ -1,23 +1,12 @@
-from rest_framework import viewsets
 from .models import Search, Table
-from .serializers import Search_Serializer,Table_Serializer,FilterSearch,FilterTable
-from django.contrib.auth.mixins import LoginRequiredMixin
-
-class Search_ViewSet(viewsets.ModelViewSet):
-    queryset=Search.objects.all()
-    serializer_class=Search_Serializer
-
-class Table_Viewset(viewsets.ModelViewSet):
-    queryset=Table.objects.all()
-    serializer_class=Table_Serializer
-
-class FilterSearch_ViewSet(viewsets.ModelViewSet):
-    queryset=Search.objects.all()
-    serializer_class=Search_Serializer
-    filter_class=FilterSearch
+from django.shortcuts import render
 
 
-class FilterTable_ViewSet(viewsets.ModelViewSet):
-    queryset=Table.objects.all()
-    serializer_class=Search_Serializer
-    filter_class=FilterTable
+def date_list(request):
+    return render (request, 'dateapp/date.html',{})
+
+
+
+
+
+
