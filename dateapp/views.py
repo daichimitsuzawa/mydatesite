@@ -1,6 +1,7 @@
 from rest_framework import viewsets
 from .models import Search, Table
 from .serializers import Search_Serializer,Table_Serializer,FilterSearch,FilterTable
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 class Search_ViewSet(viewsets.ModelViewSet):
     queryset=Search.objects.all()

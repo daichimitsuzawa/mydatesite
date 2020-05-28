@@ -3,3 +3,5 @@ from .models import Search, Table
 
 admin.site.register(Search)
 admin.site.register(Table)
+
+
