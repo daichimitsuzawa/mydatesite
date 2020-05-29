@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Course Search</title>
+    <script src="static/date.js"></script>
+    <link rel="stylesheet" href="{% static 'static/date.css' %}">
+    <link rel=" stylesheet " href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css ">
+    <link rel="stylesheet " href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css ">
+    <link rel="stylesheet " href="{% static 'css/date.css' %} ">
+</head>
+
+<body class="body ">
+    <ul class="header " id="header ">
+
+        <li><a href="file:///Users/mitsuzawadaichi/My%20date%20site/date.html ">search</a></li>
+        <li>history</li>
+        <li>timeline</li>
+        <li>my page</li>
+
+    </ul>
+
+
+
+
+    <p class="date ">Date Course Search</p>
+
+    {% block content %}{% endblock %}
+
+
+
+</body>
+
+</html>

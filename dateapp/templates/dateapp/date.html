@@ -1,48 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'dateapp/base.html' %} {% block content %}
+<div class="searchArea" id="makeImg">
+    <form method="post" action>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Date Course Search</title>
-    <script src="date.js"></script>
-    <link rel="stylesheet" href="date.css">
-
-</head>
-
-<body class="body">
-    <ul class="header" id="header">
-
-        <li><a href="file:///Users/mitsuzawadaichi/My%20date%20site/date.html">search</a></li>
-        <li>history</li>
-        <li>timeline</li>
-        <li>my page</li>
-
-    </ul>
+        <p>Number of People</p>
+        <p>{{ male_text }}</p>
+        <input type="text" id="search-text-male" class="searchTextMale" size="30" maxlength="3" placeholder="number">
+        <p>{{ female_text }}</p>
+        <input type="text" id="search-text-female" class="searchTextFemale" size="30" maxlength="3" placeholder="number">
+        <p>{{ situation_text }}</p>
+        <input type="text" id="search-text-situation" class="searchTextSituation" size="30" maxlength="50" placeholder="situation">
+        <p>Time</p>
+        from <input type="time" id="time-text-left" name=" time1 " value="00:00 " max="23:59 " required> to <input type="time" id="time-text-right" name="time2" value="00:00 " max="23:59 " required>
+        <p>The place(area)</p>
+        <input type="text " id="search-text-place " class="searchTextPlace " size="30 " maxlength="50 " placeholder="where ">
+        <p><a href="file:///Users/mitsuzawadaichi/gitclone/mydatesite/result.html " class="movingresultpage ">Search</p></a>
 
 
-
-
-    <p class="date">Date Course Search</p>
-
-    <div class="searchArea" id="makeImg">
-        <form method="post" action>
-
-            <p>Number of People</p>
-            male:
-            <input type="text" id="search-text-male" class="searchTextMale" size="30" maxlength="3" placeholder="number"> female:
-            <input type="text" id="search-text-female" class="searchTextFemale" size="30" maxlength="3" placeholder="number">
-            <p>Situation</p>
-            <input type="text" id="search-text-situation" class="searchTextSituation" size="30" maxlength="50" placeholder="situation">
-            <p>Time</p>
-            from <input type="time" id="time-text-left" name=" time1 " value="00:00 " max="23:59 " required> to <input type="time " id="time-text-right" name="time2" value="00:00 " max="23:59 " required>
-            <p>The place(area)</p>
-            <input type="text " id="search-text-place " class="searchTextPlace " size="30 " maxlength="50 " placeholder="where ">
-            <p><a href="file:///Users/mitsuzawadaichi/gitclone/mydatesite/result.html " class="movingresultpage ">Search</p></a>
-
-
-        </form>
-    </div>
+    </form>
+</div>
+{% endblock %}
 
 
 

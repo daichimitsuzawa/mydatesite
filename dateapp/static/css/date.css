@@ -1,12 +1,12 @@
     .body {
-        background: url(background/tokyo.jpg) no-repeat scroll center center;
+        background: url(mydatesite/dateapp/static/background/tokyo.jpg) no-repeat scroll center center;
         z-index: 1;
-        opacity: 50;
+        opacity: 1;
     }
     
     .header {
         list-style: none;
-        color: blue;
+        color: red;
         overflow: hidden;
         text-align: center;
         padding: 10px 10px;
@@ -43,8 +43,6 @@
         font-family: 'Times New Roman', Times, serif;
         font-size: 30px;
     }
-    
-    .buttonSearch {}
     
     .movingresultpage {
         font-family: sans-serif;
